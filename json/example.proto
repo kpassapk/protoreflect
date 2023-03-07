@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package tmp.protoreflect.json.example;
+
+option go_package = "tmp/protoreflect/json";
+
+import "google/protobuf/timestamp.proto";
+
+message ComplexType {
+    int64 id = 1;
+    string name = 2;
+    google.protobuf.Timestamp birthday = 3;
+}
